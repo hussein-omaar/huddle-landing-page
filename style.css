@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;500&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;500&family=Open+Sans&family=Poppins:wght@100&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(./images/bg-desktop.svg);
+    display: flex;
+    height: 100vh;
+    padding: 40px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.left {
+    width: 60vw;
+    height: 100vh;
+}
+
+.left .illustration {
+    width: 90%;
+}
+
+.left .illustration img {
+    width: 100%;
+}
+
+.left .logo {
+    padding-bottom: 50px;
+}
+
+.right {
+    width: 40vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 140px;
+}
+
+.right h1 {
+    color: #FFFFFF;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.right p {
+    color: #FFFFFF;
+    line-height: 2;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.right button {
+    padding: 15px;
+    width: 35%;
+    margin-left: -320px;
+    border-radius: 100px;
+    cursor: pointer;
+    color: hsl(257, 40%, 49%);
+}
+
+.right .social-icon {
+    padding-left: 350px;
+    padding-top: 80px;
+    margin-bottom: 50px;
+}
+
+.right .social-icon .facebook-icon,
+.twitter-icon,
+.instagram-icon {
+    border: 1px solid #ffff;
+    border-radius: 100%;
+    padding: 5px;
+    width: 25%;
+}
+
+.right .social-icon .twitter-icon {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+@media all and (max-width: 1320px) {
+    body {
+        flex-direction: column;
+        width: 100vw;
+        align-items: center;
+    }
+    .left {
+        width: 100%;
+        height: 50%;
+    }
+    .left .logo {
+        width: 50%;
+    }
+    .left .logo img {
+        width: 100%;
+    }
+    .left .illustration {
+        width: 100%;
+        text-align: center;
+    }
+    .left .illustration img {
+        width: 78%;
+    }
+    .right {
+        width: 100vw;
+        padding-top: 70px;
+        text-align: center;
+    }
+    .right .social-icon {
+        padding: unset;
+    }
+    .right h1,
+    p {
+        width: 80%;
+    }
+    .right h1 {
+        font-size: 30px;
+    }
+    .right button {
+        margin: unset;
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 1024px) {
+    body {
+        height: 170vh;
+    }
+    .left {
+        height: 60%;
+    }
+    .left .logo img {
+        width: 34%;
+    }
+    .right {
+        height: 40%;
+    }
+}
